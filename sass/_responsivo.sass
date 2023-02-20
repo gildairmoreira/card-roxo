@@ -1,0 +1,29 @@
+//Mixin
+@mixin reset
+  *
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Roboto', sans-serif
+// Placeholder
+%container-format
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 65%
+
+  max-height: 800px
+
+//MOBA
+
+@mixin responsive-l
+@media (max-width:1500px)
+  @content
+
+@mixin responsive-m
+@media (max-width:1200px)
+  @content
+
+@mixin responsive-sm
+@media (max-width:900px)
+  @content
